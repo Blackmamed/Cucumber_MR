@@ -1,3 +1,4 @@
+
   #Senaryo
   #CitizenShip sayfasına gidiniz.
   #Create işlemini doğrulayınız.
@@ -10,7 +11,6 @@
       When Enter username and password and click login button
       Then User should login successfully
       And Navigate to Citizenship page
-
 
     Scenario Outline: Delete Citizenship
       When User a Citizenship name as "<name>" shortname as "<shortname>"

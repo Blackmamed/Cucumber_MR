@@ -1,4 +1,7 @@
+
 Feature: DataTable Sample
+
+  @Regression
 
   Scenario: Usera List
     When Write username "Memmed"

@@ -6,6 +6,7 @@ import Pages.Parent;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.commons.lang3.RandomStringUtils;
 
 public class _02_CountrySteps extends Parent {
 
@@ -21,6 +22,9 @@ public class _02_CountrySteps extends Parent {
 
     @When("Create a Country")
     public void createACountry() {
+
+        String countryName= RandomStringUtils.randomAlphanumeric(8); // 4 harf
+        String countryCode= RandomStringUtils.randomNumeric(4); // 4 rakam
         dc.clickFunction(dc.addPlusBtn);
         dc.sendKeysFunction(dc.nameInput, "MRN_Country");
         dc.sendKeysFunction(dc.codeInput, "2460406");

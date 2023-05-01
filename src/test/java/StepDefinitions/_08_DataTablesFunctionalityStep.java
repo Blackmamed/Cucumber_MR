@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class _08_DataTablesFunctionality {
+public class _08_DataTablesFunctionalityStep {
 
     LeftNav ln = new LeftNav();
     DialogContent dc = new DialogContent();
@@ -50,5 +50,18 @@ public class _08_DataTablesFunctionality {
             dc.sendKeysFunction(element, items.get(i).get(1));
 
         }
+    }
+
+    @And("User delete item from Dialoq Content")
+    public void userDeleteItemFromDialoqContent(DataTable dataTable) {
+
+        List<String> strButtons = dataTable.asList(String.class);
+
+        for (String strDeleteText : strButtons) {
+
+            dc.deleteItem(strDeleteText);
+
+        }
+
     }
 }

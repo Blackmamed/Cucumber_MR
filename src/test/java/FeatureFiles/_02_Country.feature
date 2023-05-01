@@ -1,9 +1,12 @@
+
 #Senaryo
 #  siteye git  -> test case -> adım
 #  login bilgilerini gir
 #  siteye girdiğini doğrula
 
 Feature: Country Functionality
+
+  @Regression
 
   Scenario: Create Country
 
