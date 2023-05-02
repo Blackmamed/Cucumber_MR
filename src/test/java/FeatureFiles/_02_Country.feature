@@ -6,8 +6,6 @@
 
 Feature: Country Functionality
 
-  @Regression
-
   Scenario: Create Country
 
     Given Navigate to Campus
