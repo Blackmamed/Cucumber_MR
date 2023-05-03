@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 
         glue = {"StepDefinitions"},
 
-        plugin= {"json:target/site/cucumber-pretty.json"}
+        plugin= {"json:target/cucumber/cucumber.json"}
 
 
 )
