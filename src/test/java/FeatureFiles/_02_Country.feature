@@ -6,7 +6,7 @@
 
 Feature: Country Functionality
 
-  @SmokeTest
+  @Regression
 
   Scenario: Create Country
 
