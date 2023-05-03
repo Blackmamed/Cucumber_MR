@@ -26,8 +26,8 @@ public class _02_CountrySteps extends Parent {
         String countryName= RandomStringUtils.randomAlphanumeric(8); // 4 harf
         String countryCode= RandomStringUtils.randomNumeric(4); // 4 rakam
         dc.clickFunction(dc.addPlusBtn);
-        dc.sendKeysFunction(dc.nameInput, "MRN_Country");
-        dc.sendKeysFunction(dc.codeInput, "2460406");
+        dc.sendKeysFunction(dc.nameInput, countryName);
+        dc.sendKeysFunction(dc.codeInput, countryCode);
         dc.clickFunction(dc.saveBtn);
     }
 

@@ -6,6 +6,8 @@
 
 Feature: Country Functionality
 
+  @SmokeTest
+
   Scenario: Create Country
 
     Given Navigate to Campus
