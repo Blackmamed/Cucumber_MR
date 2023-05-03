@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 
         glue = {"StepDefinitions"},
 
-        plugin= {"html:target/site/cucumber-pretty.html"}
+        plugin= {"json:target/site/cucumber-pretty.json"}
 )
 
 public class _04_TestRunnerSmoke extends AbstractTestNGCucumberTests {

@@ -58,6 +58,7 @@ public class GWD {  //GeneralWebDriver
                     ChromeOptions options = new ChromeOptions();
                   // options.addArguments("--remote-allow-origins=*");
                     options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
+                    // Jenkins ucun lazmdir chrome da ekrani maximaze edir
                     threadDriver.set(new ChromeDriver()); // (options)  // yoksa buraya bir tane set et
                     break;
             }
